@@ -101,7 +101,7 @@
     4. **ACF to REST API** by *airesvsg*
 
 
-### 2. Configure Wordpress
+### 3. Configure Wordpress
 1. Run Docker: 
     ```
     docker compose up -d
@@ -141,7 +141,7 @@
         docker compose up -d
         ```
     
-### Add a new post type
+### 4. Add a new post type
 1. See the list created posts: 
     1. Open `http://localhost:8000/wp-admin/` 
     2. Open **Posts** from the sidebar menu
@@ -156,7 +156,7 @@
     7. Open **Books** from the sidebar menu > **Add new Book**
     8. Add book title, description, excerpt, and featured image > **Publish**
 
-### Add a new field group
+### 5. Add a new field group
 1. Open **ACF** > **Field Groups** from the sidebar menu 
 2. Click **Add New** > **Add New Field Group** > `Books`
 3. **Settings** > **Location Rules** > **Show this field group if** > **Post Type** > **is equal to** > ***`Book`***
@@ -164,7 +164,7 @@
 5. Open **Book One** you created > Go to **Publisher** field > Enter `publisher name` > **Save**
 
 
-### 3. Test API Requests with Thunder Client
+### 6. Test API Requests with Thunder Client
 
 1. Install **Thunder Client** VS Code extension 
 2. Send a GET request to `http://localhost:8000/wp-json`
@@ -220,7 +220,7 @@
 4. Check for **201 Created** response 
 
 
-### 4. Create React App
+### 7. Create React App
 
 1. Download and Install **Node.js**
 2. Open project folder in VSCode Integrated Terminal
