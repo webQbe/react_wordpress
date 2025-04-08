@@ -1,5 +1,7 @@
+/* Container Component */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import BookItem from "./BookItem";
 
 const Books = () => {
 
@@ -28,14 +30,15 @@ const Books = () => {
     <div>
         { books.length > 0 ? // If books.length is greater than 0, run the code
             ( 
-              // Map over books array
-              books.map(book => (
-                /* Render <div> for each book with its title */
-                <div key={ book.id }>
-                    <h4>{ book.title.rendered }</h4>
-                </div>
-             ))
-            ) : 
+              <div>
+                {   // Map over books array
+                    books.map(book => (
+                        /* Renders a BookItem & pass the book object as a prop */
+                        <BookItem key={book.id} book={book} />
+                    ))
+                }
+              </div>
+             ) : 
             (  
                 /* If there are no books */
                 <p>No books found.</p>
