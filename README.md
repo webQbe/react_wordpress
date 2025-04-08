@@ -243,7 +243,7 @@
 
 7. Install NPM packages : 
     ```
-    npm i axios react-router-dom
+    npm i axios react-router-dom prop-types
     ```
 8. Start Development Server: 
     ```
