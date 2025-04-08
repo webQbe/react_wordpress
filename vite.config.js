@@ -5,7 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: { 
-        proxy: {
+        port: 3000,
+        proxy: { /* For Wordpress REST API */
           '/wp-json': {
             target: 'http://localhost:8000',
             changeOrigin: true,
