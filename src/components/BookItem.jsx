@@ -1,5 +1,6 @@
 /* Presentational Component */
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import PropTypes from 'prop-types'
 
@@ -63,7 +64,16 @@ const BookItem = ({ book }) => { // Receive a book prop
                  If you don't want to use dangerouslySetInnerHTML, you could strip tags or use a library like DOMPurify or show plain text instead — but you’ll lose formatting. */
             }} 
         />
-    
+
+        <Link to={`/book/${book.id}`} // generate a path like /book/4
+         >
+            Read Review
+            {/* Render Link from react-router-dom:
+                Clicking this link updates the URL and loads the BookPage for that specific book
+            */}
+        </Link>
+        
+        <hr />
     </div>
   )
 }
