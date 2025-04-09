@@ -24,7 +24,7 @@ const Books = () => {
   }, []); // Run once when component mounts
 
   // If !isLoaded is false show Loading...
-  if (!isLoaded) return <h3>Loading...</h3>
+  if (!isLoaded) return <h3>Loading books...</h3>
 
   return (
     <div>
