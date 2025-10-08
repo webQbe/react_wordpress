@@ -1,15 +1,20 @@
 # React with Wordpress REST API
-- You can use Wordpress as a **CMS** for your clients
-- Use a **React Single Page Appication** on the frontend and connect it to the **Wordpress REST API**
-- You can access all the resources Wordpress offers such as:
+This repo is an adaptation of [Exploring The Wordpress REST API & React Integration](https://www.youtube.com/watch?v=fFNXWinbgro&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb&index=14&pp=iAQB) by Brad Traversy.
+
+I followed the tutorial to learn followings:
+- Using Wordpress as a **CMS** for clients
+- Using a **React Single Page Appication** on the frontend and connect it to the **Wordpress REST API**
+- Accessing all the resources Wordpress offers such as:
     - **Custom Post Types**
     - **JWT Authentication**
 - Setting up Wordpress and MySQL in **Docker Containers**
 
 
+## What I changed
+- Configured proxy in Vite (not `package.json`) via `vite.config.js`.
+
 
 ## Getting Started
-
 
 ### 1. Set Up Wordpress on Docker in VSCode
 1. Create and open a new project folder:
@@ -249,3 +254,11 @@
     ```
     npm run dev 
     ```
+
+
+## Credits
+Original tutorial: [Exploring The Wordpress REST API & React Integration](https://www.youtube.com/watch?v=fFNXWinbgro&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb&index=14&pp=iAQB) — Brad Traversy.
+This repo includes my changes (noted above).
+
+## License
+MIT License
